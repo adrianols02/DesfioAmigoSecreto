@@ -31,7 +31,7 @@ function sortearAmigo (){
         let lista = document.getElementById('resultado'); 
         lista.innerHTML = ""; 
         let novoItem = document.createElement('li');
-        novoItem.textContent = amigos[sorteado];
+        novoItem.textContent = "O seu amigo secreto sorteado foi: " + amigos[sorteado];
         lista.appendChild(novoItem);
     }
 }
