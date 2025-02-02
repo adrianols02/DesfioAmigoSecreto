@@ -20,3 +20,12 @@ function criarLista() {
         lista.appendChild(novoItem);
     }
 }
+
+function sortearAmigo (){
+    let sorteado = parseInt(Math.random()*amigos.length);
+    let lista = document.getElementById('listaAmigos'); 
+    lista.innerHTML = ""; 
+    let novoItem = document.createElement('li');
+    novoItem.textContent = amigos[sorteado];
+    lista.appendChild(novoItem);
+}
