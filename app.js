@@ -22,10 +22,16 @@ function criarLista() {
 }
 
 function sortearAmigo (){
-    let sorteado = parseInt(Math.random()*amigos.length);
     let lista = document.getElementById('listaAmigos'); 
     lista.innerHTML = ""; 
-    let novoItem = document.createElement('li');
-    novoItem.textContent = amigos[sorteado];
-    lista.appendChild(novoItem);
+    if (amigos.length === 0){
+        adicionarAmigo();
+    }else{
+        let sorteado = parseInt(Math.random()*amigos.length);
+        let lista = document.getElementById('resultado'); 
+        lista.innerHTML = ""; 
+        let novoItem = document.createElement('li');
+        novoItem.textContent = amigos[sorteado];
+        lista.appendChild(novoItem);
+    }
 }
