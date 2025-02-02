@@ -10,3 +10,13 @@ function adicionarAmigo(){
         document.querySelector('input').value = "";
     }criarLista();
 }
+
+function criarLista() {
+    let lista = document.getElementById('listaAmigos'); 
+    lista.innerHTML = ""; 
+    for (let i = 0; i < amigos.length; i++) {
+        let novoItem = document.createElement('li');
+        novoItem.textContent = amigos[i];
+        lista.appendChild(novoItem);
+    }
+}
