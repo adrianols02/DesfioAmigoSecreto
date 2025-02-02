@@ -1,0 +1,4 @@
+Desafio proposto pela alura para o curso ONE - Praticando Lógica de Programação: Challenge Desafio Amigo Secreto;
+O aplicaivo tem o objetivo de sortear um amigo secreto de uma lista de amigos;
+É solicitado que ao usuário informe um nome de um amigo, ao clicar no botão "Adicionar", o nome é incluido em uma lista com os nomes informados;
+Ao clicar no botão 'Sortear amigo", e sorteado um nome aleatório da lista de nomes.
