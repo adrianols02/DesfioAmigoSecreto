@@ -6,9 +6,15 @@ function adicionarAmigo(){
     if (nomeAmigo == ""){
         alert("Por favor, insira um nome!");
     }else{
+        if (amigos.includes(nomeAmigo)) {
+            alert("Nome Já exite, favor infome outro nome!");
+            document.querySelector('input').value = "";
+
+        } else {
         amigos.push(nomeAmigo);
         document.querySelector('input').value = "";
-    }criarLista();
+    }}criarLista();
+
 }
 
 function criarLista() {
