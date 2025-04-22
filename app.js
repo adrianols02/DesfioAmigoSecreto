@@ -8,12 +8,13 @@ function adicionarAmigo(){
     }else{
         if (amigos.includes(nomeAmigo)) {
             alert("Nome Já exite, favor infome outro nome!");
-            document.querySelector('input').value = "";
+           limparCampo();
 
         } else {
         amigos.push(nomeAmigo);
-        document.querySelector('input').value = "";
-    }}criarLista();
+        limparCampo();
+        }
+    }criarLista();
 
 }
 
@@ -40,4 +41,6 @@ function sortearAmigo (){
         novoItem.textContent = "O seu amigo secreto sorteado foi: " + amigos[sorteado];
         lista.appendChild(novoItem);
     }
+} function limparCampo(){
+    document.querySelector('input').value = "";
 }
